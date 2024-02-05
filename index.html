@@ -10,66 +10,226 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="./css/font.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+  <!-- font awsome  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
   <!-- Navbar-->
 
-  <header class="nav-shadow">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid container">
-        <a class="navbar-brand" href="#"><img src="./images/PLAN150-logo.png" alt=""></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarScroll">
-          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll nav_margin" style="--bs-scroll-height: 100px;">
-            <li class="nav-item">
-              <a class="nav-link active nav-hover" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Testimonial</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
-          <div class="d-flex ">
-            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll nav_margin" style="--bs-scroll-height: 100px;">
-              <li class="nav-item nav-link-padding under-line">
-                <a class="nav-link active nav-hover " aria-current="page" href="#">Login</a>
+  <header class="">
+    <div class="container center">
+      <div class="row">
+        <div class="col-2">
+          <a href="#" class="logo">
+            <img src="./images/PLAN150-logo.png" alt="">
+          </a>
+        </div>
+        <div class="col-8 d-flex justify-content-center align-items-center">
+          <div class="menu--wrapper d-flex justify-content-center align-items-center">
+            <ul class="menu list-unstyled d-flex justify-content-between">
+              <li class="menu-li">
+                <a href="#">Home</a>
               </li>
-
+              <li class="menu-li">
+                <a href="#">About</a>
+              </li>
+              <li class="menu-li">
+                <a href="#">Testimonials</a>
+              </li>
+              <li class="menu-li">
+                <a href="#">Contact</a>
+              </li>
             </ul>
-            <button class="btn reg-button" type="submit">Register</button>
+
+          </div>
+          <div class="hamburger--menu">
+            <img src="" alt="">
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="heaqder--btn d-flex justify-content-between">
+            <button class="menu-btn-2">
+              <a href="#">Login</a>
+            </button>
+            <button class="menu-btn">
+              <a class="" href="#">Register</a>
+            </button>
           </div>
         </div>
       </div>
-    </nav>
+    </div>
   </header>
-  <!-- Navbar -->
+  <!-- Navbar end -->
 
-  <footer style="background-color: bisque;">
+
+  <!-- hero area start  -->
+  <section class="hero">
     <div class="container">
-      <div class="row">
+      <div class="row d-flex align-items-center">
+        <div class="col-7">
+          <h1 class="hero-h1">START YOUR <span>FREE FITNESS JOURNEY</span> TODAY</h1>
+          <p class="hero-p">Lorem ipsum dolor sit amet consectetur. Nulla viverra hac lectus consequat consectetur.</p>
+          <div class="bbb-wrapper fl-wrap hero-pr">
+            <div class="subcribe-form fl-wrap">
+
+              <form id="subscribe" novalidate="true">
+                <input class="enteremail form-control" name="EMAIL" id="subscribe-email"
+                  placeholder="Enter Your Email Address" spellcheck="false" type="text">
+                <button type="submit" id="subscribe-button" class="subscribe-button color-bg"></i>
+                  Subscribe</button>
+                <label for="subscribe-email" class="subscribe-message"></label>
+              </form>
+            </div>
+          </div>
+          <p class="hero-p">Join the 30,000 users that receive our weekly newsletter</p>
+          <ul class="d-flex hero-icon">
+            <li class="footer-icon"><i class="fa fa-instagram"></i></li>
+            <li class="footer-icon"><i class="fa fa-youtube-play"></i></li>
+            <li class="footer-icon"><i class="fa fa-snapchat-square"></i></li>
+            <li class="footer-icon"><i class="fa fa-pinterest-p"></i></li>
+          </ul>
+        </div>
+        <div class="col-5">
+          <img src="./images/Group 10015.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- hero aria end  -->
+
+  <!-- services section start  -->
+  <section class="service">
+    <div class="container">
+      <div class="service-text">
+        <h2 class="secvice">SUBSCRIPTION SERVICES</h2>
+        <p>Lorem ipsum dolor sit amet consectetur. Nulla viverra hac lectus offer consequat consectetur. Lorem ipsum
+          dolor sit amet
+          consectetur.</p>
+      </div>
+
+      <!-- <div class="row service-single-item">
+        <div class="col-6">
+          <div class="service-single-item-image">
+            <img src="/images/service/1.png" alt="">
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="service-single-item-image-content">
+            <h3>FREE</h3>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- single service item -->
+      <div class="row d-flex justify-content-center">
+        <div class="col-10">
+          <div class="row service-single-item d-flex align-items-center">
+            <div class="col-6">
+              <div class="service-single-item-image">
+                <img src="/images/service/1.png" alt="">
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="service-single-item-content">
+                <h3>FREE</h3>
+                <h5>Generic Workout Plan</h5>
+                <ul>
+                  <li>Unlimited access to the gym</li>
+                  <li>5 classes per week</li>
+                  <li>8 trainings</li>
+                  <li>4 swimming pool sessions</li>
+                </ul>
+                <button class="menu-btn">
+                  <a class="" href="#">Get Started</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- single service item -->
+      <div class="row d-flex justify-content-center mt-5">
+        <div class="col-10 service-radius">
+          <div class="row service-single-item d-flex align-items-center">
+
+            <div class="col-6">
+              <div class="service-single-item-content">
+                <h3>PREMIUM</h3>
+                <h5>Specialized Workout Plans</h5>
+                <ul>
+                  <li>Unlimited access to the gym</li>
+                  <li>5 classes per week</li>
+                  <li>8 trainings</li>
+                  <li>4 swimming pool sessions</li>
+                </ul>
+                <button class="menu-btn">
+                  <a class="" href="#">Get Started</a>
+                </button>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="service-single-item-image">
+                <img src="/images/service/2.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- single service item -->
+      <div class="row d-flex justify-content-center mt-5">
+        <div class="col-10">
+          <div class="row service-single-item d-flex align-items-center">
+            <div class="col-6">
+              <div class="service-single-item-image">
+                <img src="/images/service/3.png" alt="">
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="service-single-item-content">
+                <h3>PREMIUM+</h3>
+                <h5>Include Meal/Supplement Plans</h5>
+                <ul>
+                  <li>Unlimited access to the gym</li>
+                  <li>5 classes per week</li>
+                  <li>8 trainings</li>
+                  <li>4 swimming pool sessions</li>
+                </ul>
+                <button class="menu-btn">
+                  <a class="" href="#">Get Started</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- footer -->
+  <footer class="mt-150">
+    <div class="container">
+      <!-- SUBSCRIBE tO oUR nEWSLETTER section -->
+      <div class="row form-btm-line">
         <div class="col">
-          <h2>SUBSCRIBE tO oUR nEWSLETTER</h2>
+          <h2 class="pr-183">SUBSCRIBE tO oUR nEWSLETTER</h2>
         </div>
         <div class="col">
           <div class="bbb-wrapper fl-wrap">
             <div class="subcribe-form fl-wrap">
-              <p class="text-center">Sign up now to our newsletter
 
-              </p>
               <form id="subscribe" novalidate="true">
-                <input class="enteremail form-control" name="EMAIL" id="subscribe-email" placeholder="Email"
-                  spellcheck="false" type="text">
-                <button type="submit" id="subscribe-button" class="btn reg-button"><i class="fa fa-rss"></i>
+                <input class="enteremail form-control" name="EMAIL" id="subscribe-email"
+                  placeholder="Enter Your Email Address" spellcheck="false" type="text">
+                <button type="submit" id="subscribe-button" class="subscribe-button color-bg"><i class="fa fa-rss"></i>
                   Subscribe</button>
                 <label for="subscribe-email" class="subscribe-message"></label>
               </form>
@@ -77,11 +237,76 @@
           </div>
         </div>
       </div>
+      <!-- footer menu section -->
+      <div class="row form-btm-line">
+        <!-- logo and text  -->
+        <div class="col">
+          <div class="logo">PLAN150</div>
+          <p class="footer-p-color">Lorem ipsum dolor sit amet consectetur. Nulla viverra hac lectus consequat.</p>
+        </div>
+
+        <!-- menu -->
+        <div class="col">
+          <div class="footer-menu-aline">
+            <div class="menu-text">
+              Menu
+            </div>
+            <ul class="">
+              <li class=""><a class="text-decoration-none" href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- contact and social  -->
+        <div class="col">
+          <div class="footer-menu-aline">
+            <ul class="d-flex justify-content-center">
+              <li class="icon-margin-right"><i class="fa fa-instagram"></i></li>
+              <li class="icon-text">support@plan150.com</li>
+            </ul>
+            <ul class="d-flex justify-content-around">
+              <li class="footer-icon"><i class="fa fa-instagram"></i></li>
+              <li class="footer-icon"><i class="fa fa-youtube-play"></i></li>
+              <li class="footer-icon"><i class="fa fa-snapchat-square"></i></li>
+              <li class="footer-icon"><i class="fa fa-pinterest-p"></i></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-padding-30">
+        <p class="text-center">Copyright © 2024 PLAN150 Developed By COMPANY NAME</p>
+      </div>
+
     </div>
   </footer>
 
 
   <script src="./js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $("#navbarTogglerButton").click(function () {
+        $(".nav-bg").toggleClass("responsive-bg");
+      });
+    });
+  </script>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+
 </body>
 
 </html>
